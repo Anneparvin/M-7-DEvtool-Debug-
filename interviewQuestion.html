@@ -58,12 +58,105 @@
     #ANS:- a sequence of symbols and characters expressing a string or pattern to be searched for within a longer piece of text.
     contains {color, colour}
 
+    ● Bom Vs Dom?
+        1.Browser object Model --Document object model.
+        2.use to access and manipulation of the browser window,
+        used to manipulate the HTML window.
+        3.Bom is superset,Dom is a subject of Bom.
 
-        </section>
-    </main>
-    <script src="./interviewQuestion.html"></script>
-    <!-- javascript cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    ● what is Cookies?
+    1)Data stored in small text.
+    2)stored in key value pairs
+
+        ## (Another question) 
+    1) Tell the difference Between Primitive and Non-Primitive Data Types in JavaScript.
+    #ANSWER:--Primitive types are predefined (already defined) in Java. Non-primitive types are created by the programmer and is not defined by Java (except for String ).
+
+
+    2) What are the Truthy and Falsy values? Give me some examples.
+    #ANSWER:--Truthy values are values that evaluate to True in a boolean context. Falsy values are values that evaluate to False in a boolean context.
+    
+    truthyExample:------------
+          false,Zero,Null,Undefined,String,'';
+    falsyExample:....
+          'false','0',(),{},[];
+
+    
+    3) What is the difference between null and undefined?
+    #ANSWER:--undefined is a variable that refers to something that doesn't exist, and the variable isn't defined to be anything. null is a variable that is defined but is missing a value.
+
+    4) What are the differences between double equal (==) and triple equal (===)?
+    #ANSWER:The == operator does the type conversion of the operands before comparison, whereas the === operator compares the values as well as the data types of the operands
+    
+    5) What is scope in JavaScript?
+    #ANSWER:--Scope in JavaScript refers to the current context of code, which determines the accessibility of variables to JavaScript.
+    
+    6) Define block scope and global scope.
+    #ANSWER:--
+    (local variables)--Variables that are declared inside a function are called local variables and in the function scope. Local variables are accessible anywhere inside the function. 
+    (Block scope):-- Variable that is declared inside a specific block & can't be accessed outside of that block.
+    (global scope)--the global scope is the scope that contains, and is visible in, all other scopes.
+    
+    7) What is hoisting in JavaScript?
+    #ANSWER:--Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope .hoisting allows you to use functions and variables before they're declared.
+    
+    8) How to use the JavaScript callback function?
+    #ANSWER:--A callback is a function passed as an argument to another function. Using a callback, you could call the calculator function ( myCalculator ) with a callback, 
+    EXAMPLE:.........
+    function myFirst() {
+      myDisplayer("Hello");
+    }
+    
+    function mySecond() {
+      myDisplayer("Goodbye");
+    }
+    
+    myFirst();
+    mySecond();
+    
+    9) Explain closure in JavaScript
+    #ANSWER:--A closure is a function having access to the parent scope, even after the parent function has closed. 
+    EXAMPLE:.........
+    <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+<p>A function can access variables defined inside the function:</p>
+
+<p id="demo"></p>
+
+<script>
+myFunction();
+
+function myFunction() {
+  let a = 4;
+  document.getElementById("demo").innerHTML = a * a;
+}
+</script>
+
+</body>
+</html>
+
+    10) Explain passed by value and passed by reference.
+    #ANSWER:-- "Passing by value" means that you pass the actual value of the variable into the function. 
+    So, in your example, it would pass the value 9. 
+    
+    "Passing by reference" means that you pass the variable itself into the function (not just the value). 
+    So, in your example, it would pass an integer object with the value of 9.
+
+    1. What is a call stack?
+2. Tell us about Try-catch?
+3. Name some console APIs.
+4. What is syntax error?
+5. When do we get reference error?
+6. a) what is wrong with the code below:
+var foo;
+console.log(foo.bar);
+b) What type of error will the code generate?
+c) What is the correct way to write the code?
+    
+    
     
     
 </body>
